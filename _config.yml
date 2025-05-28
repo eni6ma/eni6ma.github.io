@@ -1,5 +1,5 @@
 # change the followings to match your Github username and repo name
-baseurl: "/eni6ma" # the name of your github repo
+baseurl: "/" # the name of your github repo
 title: eni6ma.com
 description: Corporate site for eni6ma.com.
 url: "https://eni6ma.com"
