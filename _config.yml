@@ -5,15 +5,12 @@ description: Corporate site for eni6ma.com.
 url: "https://eni6ma.com"
 author: eni6ma
 
-# site information used in page title, meta data etc.
-title: "Tailpages: Tailwind + Github Pages"
-description: A Github Pages (Jekyll) template based on TailwindCSS
 
 # color theme for links
 theme-color: indigo # indigo|yellow|pink|green|stone|
 
 # homepage information
-author: Satoshi Nakamoto
+
 author-bio: Creator of Bitcoin  # change to false to hide
 author-image: 279.png  # file must be in the /assets/img/ folder
 
