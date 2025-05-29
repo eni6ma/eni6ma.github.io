@@ -50,7 +50,7 @@ description: Discover ENI6MA, the cognitive cybersecurity platform redefining au
 </section>
 
 <!-- Use Cases Section -->
-<section class="bg-gray-900 text-white py-20 px-8">
+<section class="bg-white py-20 px-8">
   <div class="max-w-5xl mx-auto text-center">
     <h2 class="text-4xl font-bold mb-6">Universal Applications</h2>
     <p class="text-lg mb-6">From voting and banking to crypto and AI, ENI6MA redefines secure access across:</p>
