@@ -1,16 +1,16 @@
 ---
 layout: page
 permalink: about
-title: ENI6MA — The Only Password You Will Never Use.
+title: 🔐  ENI6MA — The Only Password You Will Never Use.
 description: Discover ENI6MA, the cognitive cybersecurity platform redefining authentication. No Biometrics. No 2FA/MF Device. Just you.
 ---
 
 <!-- Hero Section -->
-<section class="bg-black text-white py-24 px-8 text-center">
-  <h1 class="text-5xl font-bold mb-4">🔐 The Only Password You Will Never Use.</h1>
-  <p class="text-xl mb-6">ENI6MA | Presented by Dylan Rosario</p>
-  <a href="mailto:soltrinox@gmail.com" class="bg-white text-black px-6 py-2 rounded-full font-semibold">Contact Us</a>
-</section>
+<!-- <section class="bg-black text-white py-24 px-8 text-center">
+  <!-- <h1 class="text-5xl font-bold mb-4">🔐 The Only Password You Will Never Use.</h1> -->
+  <!-- <p class="text-xl mb-6">ENI6MA | Presented by Dylan Rosario</p> -->
+  <!-- <a href="mailto:soltrinox@gmail.com" class="bg-white text-black px-6 py-2 rounded-full font-semibold">Contact Us</a> -->
+<!-- </sectißon> --> -->
 
 <!-- Problem Section -->
 <section class="bg-gray-100 py-20 px-8">
