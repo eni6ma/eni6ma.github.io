@@ -6,13 +6,13 @@ permalink: about
 
 ---
 layout: default
-title: ENI6MA — The Last Password You’ll Never Use
-description: Discover ENI6MA, the cognitive cybersecurity platform redefining authentication. No passwords. No MFA. Just you.
+title: ENI6MA — The Only Password You Will Never Use.
+description: Discover ENI6MA, the cognitive cybersecurity platform redefining authentication. No Biometrics. No 2FA/MF Device. Just you.
 ---
 
 <!-- Hero Section -->
 <section class="bg-black text-white py-24 px-8 text-center">
-  <h1 class="text-5xl font-bold mb-4">🔐 The Only Password You’ll Never Enter</h1>
+  <h1 class="text-5xl font-bold mb-4">🔐 The Only Password You Will Never Use.</h1>
   <p class="text-xl mb-6">ENI6MA | Presented by Dylan Rosario</p>
   <a href="mailto:soltrinox@gmail.com" class="bg-white text-black px-6 py-2 rounded-full font-semibold">Contact Us</a>
 </section>
@@ -44,7 +44,7 @@ description: Discover ENI6MA, the cognitive cybersecurity platform redefining au
       <div>👁 Phish & Keylogger Resistant</div>
       <div>🔐 Quantum-Safe Encryption</div>
       <div>🌐 Cross-Platform Compatibility</div>
-      <div>🗝 No Cloud. No Sync. Ever.</div>
+      <div>🗝 No Cloud Dependency. Big Tech Indy.</div>
     </div>
   </div>
 </section>
