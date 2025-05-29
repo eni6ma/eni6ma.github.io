@@ -1,11 +1,6 @@
 ---
 layout: page
-title: About
 permalink: about
----
-
----
-layout: default
 title: ENI6MA — The Only Password You Will Never Use.
 description: Discover ENI6MA, the cognitive cybersecurity platform redefining authentication. No Biometrics. No 2FA/MF Device. Just you.
 ---
@@ -21,13 +16,13 @@ description: Discover ENI6MA, the cognitive cybersecurity platform redefining au
 <section class="bg-gray-100 py-20 px-8">
   <div class="max-w-5xl mx-auto text-center">
     <h2 class="text-4xl font-bold mb-6">The Credential Crisis</h2>
-    <p class="text-lg mb-6">Passwords are broken. MFA is clunky. Biometrics can't be changed. Welcome to the global password epidemic.</p>
-    <ul class="grid grid-cols-2 gap-6 text-left text-black text-lg">
-      <li>🔓 85% of breaches caused by stolen passwords</li>
-      <li>💸 $3.9 Trillion in global cyber losses (24 months)</li>
-      <li>🔐 12 Billion passwords stolen per year</li>
-      <li>📉 $25.6B spent on ineffective password tech (2023)</li>
-    </ul>
+    <p class="text-lg mb-6">Passwords today are implemented wrong. Passwordless auth is a sham. 2FA/MFA is clunky. Biometrics can't be changed. Welcome to the global password epidemic.</p>
+    <div class="grid grid-cols-2 gap-6 text-left text-black text-lg">
+      <div>🔓 85% of breaches caused by stolen passwords</div>
+      <div>💸 $3.9 Trillion in global cyber losses (24 months)</div>
+      <div>🔐 12 Billion passwords stolen per year</div>
+      <div>📉 $25.6B spent on ineffective password tech (2023)</div>
+    </div>
   </div>
 </section>
 
