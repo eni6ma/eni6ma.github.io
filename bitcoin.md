@@ -4,7 +4,7 @@ title: Cryptography
 permalink: cryptography
 ---
 
-# ENI6MA Inc. — A Layer-Zero Proof Company
+# ENI6MA Co. — A Layer-Zero Proof Company
 
 ENI6MA is **not** just another authentication vendor; it is a *proof* company.
 
