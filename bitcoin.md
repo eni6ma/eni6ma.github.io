@@ -78,7 +78,7 @@ Traversal across all three forms a non-deterministic walk in a Hilbert-space lat
 
 Traditional cryptography hides secrets **inside machines**; ENI6MA pushes them back into the **operator**.
 
-During enrollment the user memorises a *holographic morphism* linking colours, bearings, gestures or tones to abstract glyphs. Each login projects a different slice of the manifold, so observable keystrokes never expose a frequency profile. The proof literally lives **“in the mind,”** creating what the deck calls the world’s first **ZKPP — Zero-Knowledge Password Proof**.
+During enrollment the user memorises a *holographic morphism* linking colours, bearings, gestures or tones to abstract glyphs. Each login projects a different slice of the manifold, so observable keystrokes never expose a frequency profile. The proof literally lives **“in the mind,”** creating what the Rosario and Wang state to be the world’s first **ZKPP — Zero-Knowledge Password Proof**.
 
 > **Perception → Cognition → Action → Verification**
 > Human memory becomes an entropy reservoir that silicon alone cannot sample.
@@ -107,7 +107,7 @@ ENI6MA behaves like **ARM** or **Dolby** for proofs: a core IP block licensed in
 * **Defense & Critical Infrastructure** — offline mechanical dials provide air-gapped authorization.
 * **AI & Content Integrity** — eigen-signature tuples watermark model weights or provenance streams.
 
-> **TAM / SAM / SOM** cited in ENI6MA’s deck: $560 B /  $210 B /  $75 B anchoring a hybrid SaaS + patent-licensing stack, with partners from Deloitte to Apple.
+> **TAM / SAM / SOM**  at over $560 B /  $210 B /  $75 B respectfully; The TAM alone is fully able of anchoring a hybrid SaaS + patent-licensing stack, with partners from Deloitte to Apple to US Dept of Defense to the IRS.
 
 ---
 
