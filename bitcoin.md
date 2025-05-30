@@ -24,7 +24,7 @@ $$L = \bigcup_i \Sigma_i$$
 
 where every alphabet $\Sigma_i$ is finite and enumerable—Latin, Morse, Braille, DNA bases, acoustic chirps, even emojis.
 
-A **build** function $$ \mathrm{Build}_{(i)}\ $$ produces words of arbitrary length, and a mapping **Commit** turns any word into a commitment array
+A **build** function $\mathrm{Build}_{(i)}\$ produces words of arbitrary length, and a mapping **Commit** turns any word into a commitment array
 
 $$
 C = (s_k,\Sigma_j,t_k)
