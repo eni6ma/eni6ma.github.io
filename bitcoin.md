@@ -142,7 +142,7 @@ Every service is **stateless**—it rebuilds  $$ C $$  from the user’s cogniti
 
 
 
-* **Brute Force / Grover Search** — attacker must traverse  $|B|^{|A|}! \times n!! \times \text{Arrangements}$, a non-deterministic lattice unreachable in sub-exponential time.
+* **Brute Force / Grover Search** — attacker must traverse  $|B|^{A}! \times n! \times \text{A}$ , a non-deterministic lattice unreachable in sub-exponential time.
 
 
 
