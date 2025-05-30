@@ -129,11 +129,11 @@ The patent discloses a **carrier-neutral symbolic projection system** that can a
 
 | Layer                 | Core Function                                                                                                                     | Patent Anchor     |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| **Commitment Engine** | Builds and stores the morphism-invariant array  $$ C={(s_k,\Sigma_j,t_k)} $$  and exposes REST/IPC endpoints                       | Claim 1 & Axiom 3 |
+| **Commitment Engine** | Builds and stores the morphism-invariant array  $C={(s_k,\Sigma_j,t_k)}$  and exposes REST/IPC endpoints                       | Claim 1 & Axiom 3 |
 | **Projection Driver** | Instantiates a foliated manifold  $M$  over any carrier (OLED, e-ink, buzzer, LIDAR cloud) ensuring  $R_i\cap R_j=\varnothing$  | Claim 8, Eq. 10   |
 | **Sensory Verifier**  | Collects vectors  $v$ , matches to  $\varphi(s)$  with  $\lVert\mathbf v-\varphi(s)\rVert<\varepsilon$                    | Eq. 12-13         |
 
-Every service is **stateless**—it rebuilds  $$ C $$  from the user’s cognition and a per-session nonce—so no credential vault exists to breach.
+Every service is **stateless**—it rebuilds  $C$  from the user’s cognition and a per-session nonce—so no credential vault exists to breach.
 
 ---
 
