@@ -10,7 +10,7 @@ description: Discover ENI6MA, the cognitive cybersecurity platform redefining au
   <!-- <h1 class="text-5xl font-bold mb-4">🔐 The Only Password You Will Never Use.</h1> -->
   <!-- <p class="text-xl mb-6">ENI6MA | Presented by Dylan Rosario</p> -->
   <!-- <a href="mailto:soltrinox@gmail.com" class="bg-white text-black px-6 py-2 rounded-full font-semibold">Contact Us</a> -->
-<!-- </sectißon> --> -->
+<!-- </sectißon> --> 
 
 <!-- Problem Section -->
 <section class="bg-gray-100 py-20 px-8">
@@ -68,7 +68,8 @@ description: Discover ENI6MA, the cognitive cybersecurity platform redefining au
 <section class="bg-black text-white py-20 px-8 text-center">
  
   <p class="text-lg mb-6">Login, secured by your mind. No codes, no forced changes, no worries.</p>
-  <a href="mailto:dylan.rosario@eni6ma.co" class="bg-white text-black px-8 py-3 rounded-full font-semibold">Contact the Team</a>
+  <br/>
+  <a href="mailto:contact@eni6ma.co" class="bg-white text-black px-8 py-3 rounded-full font-semibold">Contact the Team</a>
 </section>
 
 <!-- Footer -->
