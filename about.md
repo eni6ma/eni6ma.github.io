@@ -69,7 +69,7 @@ description: Discover ENI6MA, the cognitive cybersecurity platform redefining au
  
   <p class="text-lg mb-6">Login, secured by your mind. No codes, no forced changes, no worries.</p>
   <br/>
-  <a href="mailto:contact@eni6ma.co" class="bg-white text-black px-8 py-3 rounded-full font-semibold">Contact the Team</a>
+  <a href="mailto:contact@eni6ma.co" class="bg-white text-black px-8 py-3 rounded-full font-semibold">For a Demo, Contact Out Team Today</a>
 </section>
 
 <!-- Footer -->
