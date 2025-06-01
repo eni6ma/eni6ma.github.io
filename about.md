@@ -62,22 +62,12 @@ description: Discover ENI6MA, the cognitive cybersecurity platform redefining au
   </div>
 </section>
 
-<!-- Roadmap Section -->
-<section class="bg-white py-20 px-8">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-6">Roadmap to a Password Safe Future</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div><h3 class="text-2xl font-semibold">2024</h3><p>Patent filing, MVP API + SDK</p></div>
-      <div><h3 class="text-2xl font-semibold">2025</h3><p>SSO Integration, Wallet, Fed. Pilots</p></div>
-      <div><h3 class="text-2xl font-semibold">2026</h3><p>OS Licensing, AI & IoT Expansion</p></div>
-    </div>
-  </div>
-</section>
+
 
 <!-- Call To Action -->
 <section class="bg-black text-white py-20 px-8 text-center">
-  <h2 class="text-4xl font-bold mb-4">🧠 Try the Enhanced Password — It’s Free</h2>
-  <p class="text-lg mb-6">Login, secured by your mind. No codes, no cloud, no compromise.</p>
+ 
+  <p class="text-lg mb-6">Login, secured by your mind. No codes, no forced changes, no worries.</p>
   <a href="mailto:dylan.rosario@eni6ma.co" class="bg-white text-black px-8 py-3 rounded-full font-semibold">Contact the Team</a>
 </section>
 

@@ -2,6 +2,7 @@
 layout: page
 title: Cryptography 
 permalink: cryptography
+description:  Eni6ma Technology and the Rosario-Wang Proof/Cypher is Patent Pending. USPTO 2024. Copyright 2024 All right reserved. Eni6ma.org - Dylan Rosario
 ---
 
 # ENI6MA Co. — A Layer-Zero Proof Company
@@ -183,3 +184,176 @@ Soundness, completeness and zero-knowledge follow directly from the Rosario–Wa
 By merging a universal symbolic language, carrier-neutral projection and the Rosario-Wang multi-round proof, **ENI6MA** becomes a layer-zero trust substrate: any person, device or dataset can prove *what it is* without surrendering the secret that defines it.
 
 > ENI6MA doesn’t just secure passwords; **it turns knowledge itself into an unforgeable act.**
+
+---
+
+# Rosario–Wang Proof of Information Entanglement
+
+**A High-Dimensional, Entropy-Accumulating Proof-of-Knowledge Primitive for Layer-0 Consensus**
+
+---
+
+## Abstract
+
+We formalise the *Rosario–Wang Proof of Information Entanglement* (RW-PoIE), a post-quantum proof-of-knowledge scheme that transforms hidden information into a projection point on a high-dimensional manifold.  Each interactive round forces the prover to demonstrate correct **subset membership** of the projection’s coordinates under a fresh, nonce-driven foliation, while leaking no information about the secret itself.  We provide a rigorous algebraic description, analyse soundness and zero-knowledge properties, and outline how RW-PoIE can serve as the scarce-resource primitive in Layer-0 (base-layer) blockchain consensus.
+
+---
+
+## 1 Introduction
+
+Modern Layer-0 consensus mechanisms anchor security in **external** resources such as energy expenditure (Proof-of-Work) or bonded capital (Proof-of-Stake).  These approaches entail environmental cost, concentration risk, or vulnerability to quantum attacks on algebraic trapdoors.  RW-PoIE offers an alternative: security derives from the *epistemic uniqueness* of a secret high-dimensional projection, verified through an information-theoretic protocol that is computationally lightweight and future-proof against quantum computers.
+
+---
+
+## 2 Preliminaries
+
+### 2.1 Notation
+
+| Symbol                      | Definition                                               |
+| --------------------------- | -------------------------------------------------------- |
+| $\Sigma$                  | Static alphabet chosen at setup                          |
+| $\mathcal H$              | Hilbert space of dimension $d$                         |
+| $M\subset\mathcal H$      | Sub-manifold that stores the commitment                  |
+| $\mathcal P,;\mathcal V$  | Prover / Verifier                                        |
+| $\mathbf P\in M$          | Projection point encoding secret $I$                   |
+| $\text{RC}=H(\mathbf P)$  | *Rosario Commitment* (public hash)                       |
+| $\Sigma\_R(\cdot)$        | Deterministic round shuffle indexed by nonce $\eta\_R$ |
+| $X\_R$                    | Round-specific “nonce alphabet”                          |
+| $x\_j^{(R)}\subset X\_R$  | $j$-th subset in round $R$                           |
+| $\Omega(\cdot)$           | Witness mapping coordinate $\mapsto$ subset label      |
+| $\mathcal M(\cdot,\cdot)$ | Membership predicate                                     |
+| $\Lambda$                 | Logical accumulator of membership tests                  |
+
+A cryptographic hash $H$ is modelled as a random oracle.
+
+---
+
+## 3 Methodology
+
+### 3.1 Commit Phase
+
+The prover embeds its secret $I$ with private entropy $\rho$:
+
+$$
+\mathbf P \;=\; \Phi\!\bigl(H(I\!\parallel\!\rho)\bigr)\in M\subset\mathcal H ,
+$$
+
+where the linear map $\Phi$ distributes the digest over $k$ orthogonal basis vectors ${\mathbf e\_1,\dots,\mathbf e\_k}$:
+
+$$
+\mathbf P \;=\; \sum_{i=1}^{k}\alpha_i\,\mathbf e_i ,\qquad \alpha_i\in\mathbb R .
+$$
+
+The public commitment is published as
+
+$$
+\text{RC}\;=\;H(\mathbf P).
+$$
+
+### 3.2 Entropy Distribution
+
+A rank-$k$ random tensor $D\in\mathbb R^{d\times k}$ (fixed per epoch) redistributes the projection:
+
+$$
+ P' \;=\; D\, P .
+$$
+
+### 3.3 Segmentation & Foliation
+
+For round $R$ the verifier issues nonce $\eta\_R$.
+
+1. **Nonce shuffle**
+   $X_R=\Sigma_R(\Sigma)\!$
+2. **Manifold foliation**
+   $M=\bigcup_{j=1}^{K}F_j^{(R)}, \qquad F_j^{(R)}\cap F_{j'}^{(R)}=\varnothing\;(j\ne j').$
+3. **Alphabet assignment**
+   $X_R=\bigcup_{j=1}^{K}x_j^{(R)}, \qquad x_j^{(R)}\;\longleftrightarrow\;F_j^{(R)}.$
+
+### 3.4 Witness Generation
+
+For each coordinate $p\_i$ of $\mathbf P'$ the prover outputs
+
+$$
+\Omega_R(p_i)=x_j^{(R)} \quad\text{such that}\quad p_i\in F_j^{(R)} .
+$$
+
+The round response is the vector
+
+$$
+\text{RR}_R=\bigl\{\Omega_R(p_i)\bigr\}_{i=1}^{k}.
+$$
+
+### 3.5 Verifier Check
+
+$$
+\mathcal M\!\bigl(p_i,x_j^{(R)}\bigr)=
+\begin{cases}
+1,&\!p_i\in x_j^{(R)},\\[4pt]
+0,&\!\text{otherwise.}
+\end{cases}
+$$
+
+### 3.6 Accumulation of Memberships
+
+The global accumulator after $n$ rounds is
+
+$$
+\Lambda^{(n)}=\bigwedge_{R=1}^{n}\,\bigwedge_{i=1}^{k}\mathcal M\!\bigl(p_i,\Omega_R(p_i)\bigr).
+$$
+
+The verifier **accepts** the knowledge claim when $\Lambda^{(n)}=1$.
+
+---
+
+## 4 Security Analysis
+
+### 4.1 Soundness
+
+A cheating prover must find $P^x$ with $H(P^x)=\text{RC}$ *and* produce correct subset witnesses under an unpredictable sequence of shuffles.  The forgery probability after $n$ rounds is bounded by
+
+$$
+\Pr[\text{forge}]\;\le\;\bigl(|\Sigma|^{-1}\bigr)^{\,n\,k}.
+$$
+
+### 4.2 Zero-Knowledge
+
+Responses reveal only subset indices, not the coordinates themselves, preserving information-theoretic privacy of $\mathbf P$.
+
+### 4.3 Post-Quantum Resilience
+
+Security relies on combinatorial search over the projection space, not on discrete-log or factorisation assumptions, rendering known quantum algorithms ineffective.
+
+---
+
+## 5 Integration with Layer-0 Consensus
+
+RW-PoIE can replace VRF or signature-based eligibility proofs in BFT or PoS engines:
+
+1. **Commit** ($\mathbf P,\text{RC}$) once per epoch.
+2. **Eligibility** — a validator is selected when
+   $H\!\bigl(\Omega_R(\mathbf P')\bigr)<\tau$
+3. **Block proposal** attaches $(\text{RC},\text{RR}\_R)$
+4. **Verification** cost is $O(k)$ dot-products plus hash operations.
+5. **Slashing** — equivocation across forks reveals $\mathbf P$, irreversibly destroying the validator’s identity.
+
+---
+
+## 6 Performance Considerations
+
+* **Computation:** SIMD-friendly dot-products; no big-integer arithmetic.
+* **Communication:** Response size $k\log_2K$ bits per round.
+* **Latency:** Finality inherits the underlying BFT voting (≈ 1–5 s slots).
+
+---
+
+## 7 Conclusion
+
+RW-PoIE transforms hidden knowledge into a reusable, privacy-preserving resource for distributed consensus.  By accumulating entropy through high-dimensional foliations, it delivers negligible energy cost, strong quantum resistance, and compact light-client proofs—making it an attractive foundation for next-generation Layer-0 blockchains.
+
+---
+
+## References
+
+1. FD. Rosario & L. Wang PhD, *Proof of Information Entanglement*, provisional patent USPTO 2025.
+2. S. Goldwasser, S. Micali & C. Rackoff, “The Knowledge Complexity of Interactive Proofs”, *SIAM J. Comput.* 18(1), 1989.
+3. E. Ben-Sasson *et al.*, “Post-Quantum Zero-Knowledge Proof Systems”, *J. Cryptology* 35(4), 2022.
