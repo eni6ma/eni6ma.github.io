@@ -11,7 +11,7 @@ ENI6MA is **not** just another authentication vendor; it is a *proof* company.
 
 At its core lies a patented cryptographic primitive—the **Rosario-Wang Proof of Information Entanglement**—that turns **any** symbol sequence, on **any** carrier, into a self-verifying commitment. From that single root primitive ENI6MA can sprout consumer-login tools, hardware locks, IoT attestations, supply-chain ledgers or AI-model watermarking, but the company itself remains the layer-zero engine that mints and licenses the proof.
 
----
+
 
 ## 1 · Mathematical Skeleton
 
@@ -73,7 +73,7 @@ Three spaces multiply
 
 Traversal across all three forms a non-deterministic walk in a Hilbert-space lattice that resists polynomial-time or near-term-quantum brute force.
 
----
+
 
 ## 2 · Cybernetic Interface
 
@@ -84,7 +84,7 @@ During enrollment the user memorises a *holographic morphism* linking colours, b
 > **Perception → Cognition → Action → Verification**
 > Human memory becomes an entropy reservoir that silicon alone cannot sample.
 
----
+
 
 ## 3 · Security & Theoretical Properties
 
@@ -96,7 +96,7 @@ During enrollment the user memorises a *holographic morphism* linking colours, b
 | **Carrier neutrality**         |  $$ S(M_{c_i}) $$  for all media  $$ c_i,c_j $$                            | Same protocol secures RFID door, optical QR, or voice IVR |
 | **Formal verifiability**       | Axioms 1-9 and Claim 17 establish soundness & completeness             | Amenable to proof assistants and NIST standardisation     |
 
----
+
 
 ## 4 · Business Model & Broad Applicability
 
@@ -110,13 +110,13 @@ ENI6MA behaves like **ARM** or **Dolby** for proofs: a core IP block licensed in
 
 > **TAM / SAM / SOM**  at over $560 B /  $210 B /  $75 B respectfully; The TAM alone is fully able of anchoring a hybrid SaaS + patent-licensing stack, with partners from Deloitte to Apple to US Dept of Defense to the IRS.
 
----
+
 
 ## 5 · Philosophical Posture
 
 Dylan Rosario frames the primitive as a **Gödelian leap**: a self-verifying artifact whose proof is inseparable from its existence—“you see the security without touching the key.” Each challenge rewrites the state-space, abolishing the static credential attackers exploit.
 
----
+
 
 ## 6 · Theory
 
@@ -124,7 +124,7 @@ The patent discloses a **carrier-neutral symbolic projection system** that can a
 
 > **In short:** ENI6MA proves *what you know—anywhere, on anything—without ever revealing it*.
 
----
+
 
 ## 7 · Reference Implementation Architecture
 
@@ -136,7 +136,7 @@ The patent discloses a **carrier-neutral symbolic projection system** that can a
 
 Every service is **stateless**—it rebuilds  $C$  from the user’s cognition and a per-session nonce—so no credential vault exists to breach.
 
----
+
 
 ## 8 · Threat Model & Formal Security
 * **Observation & Replay** — alphabet shuffle  $\Sigma(A)! \to X^R$ makes recorded inputs useless;  $\Lambda$ is true only if *all* rounds succeed.
@@ -151,7 +151,7 @@ Every service is **stateless**—it rebuilds  $C$  from the user’s cognition a
 
 Soundness, completeness and zero-knowledge follow directly from the Rosario–Wang proofs.
 
----
+
 
 
 ## 9 · Compliance & Standardisation Path
@@ -160,7 +160,7 @@ Soundness, completeness and zero-knowledge follow directly from the Rosario–Wa
 * **ISO/IEC 19790 Compatibility** — same proof runs inside PCI-HSMs, e-passport chips or IEC 62443 controllers.
 * **Formal Methods** — axiomatic set already machine-checkable; suitable for post-quantum competitions.
 
----
+
 
 ## 10 · Ecosystem & Licensing Model
 
@@ -168,7 +168,7 @@ Soundness, completeness and zero-knowledge follow directly from the Rosario–Wa
 * **SDK Seat** — JSON-RPC + WASM verifier at  **$5/mo enterprise user**.
 * **Sovereign Suite** — site licence with DID-wallet kit for national e-ID.
 
----
+
 
 ## 11 · Research & Road Map
 
@@ -177,7 +177,7 @@ Soundness, completeness and zero-knowledge follow directly from the Rosario–Wa
 * **Quantum-Resilient Wallets** — seed commitments as manifold tuples.
 * **Offline Zero-Trust Locks** — mechanical dials rendering the manifold.
 
----
+
 
 ## 12 · Closing Vision
 
@@ -185,25 +185,25 @@ By merging a universal symbolic language, carrier-neutral projection and the Ros
 
 > ENI6MA doesn’t just secure passwords; **it turns knowledge itself into an unforgeable act.**
 
----
+
 
 # Rosario–Wang Proof of Information Entanglement
 
 **A High-Dimensional, Entropy-Accumulating Proof-of-Knowledge Primitive for Layer-0 Consensus**
 
----
+
 
 ## Abstract
 
 We formalise the *Rosario–Wang Proof of Information Entanglement* (RW-PoIE), a post-quantum proof-of-knowledge scheme that transforms hidden information into a projection point on a high-dimensional manifold.  Each interactive round forces the prover to demonstrate correct **subset membership** of the projection’s coordinates under a fresh, nonce-driven foliation, while leaking no information about the secret itself.  We provide a rigorous algebraic description, analyse soundness and zero-knowledge properties, and outline how RW-PoIE can serve as the scarce-resource primitive in Layer-0 (base-layer) blockchain consensus.
 
----
+
 
 ## 1 Introduction
 
 Modern Layer-0 consensus mechanisms anchor security in **external** resources such as energy expenditure (Proof-of-Work) or bonded capital (Proof-of-Stake).  These approaches entail environmental cost, concentration risk, or vulnerability to quantum attacks on algebraic trapdoors.  RW-PoIE offers an alternative: security derives from the *epistemic uniqueness* of a secret high-dimensional projection, verified through an information-theoretic protocol that is computationally lightweight and future-proof against quantum computers.
 
----
+
 
 ## 2 Preliminaries
 
@@ -226,7 +226,7 @@ Modern Layer-0 consensus mechanisms anchor security in **external** resources su
 
 A cryptographic hash $H$ is modelled as a random oracle.
 
----
+
 
 ## 3 Methodology
 
@@ -303,7 +303,7 @@ $$
 
 The verifier **accepts** the knowledge claim when $\Lambda^{(n)}=1$.
 
----
+
 
 ## 4 Security Analysis
 
@@ -323,7 +323,7 @@ Responses reveal only subset indices, not the coordinates themselves, preserving
 
 Security relies on combinatorial search over the projection space, not on discrete-log or factorisation assumptions, rendering known quantum algorithms ineffective.
 
----
+
 
 ## 5 Integration with Layer-0 Consensus
 
@@ -336,7 +336,7 @@ RW-PoIE can replace VRF or signature-based eligibility proofs in BFT or PoS engi
 4. **Verification** cost is $O(k)$ dot-products plus hash operations.
 5. **Slashing** — equivocation across forks reveals $\mathbf P$, irreversibly destroying the validator’s identity.
 
----
+
 
 ## 6 Performance Considerations
 
@@ -344,13 +344,13 @@ RW-PoIE can replace VRF or signature-based eligibility proofs in BFT or PoS engi
 * **Communication:** Response size $k\log_2K$ bits per round.
 * **Latency:** Finality inherits the underlying BFT voting (≈ 1–5 s slots).
 
----
+
 
 ## 7 Conclusion
 
 RW-PoIE transforms hidden knowledge into a reusable, privacy-preserving resource for distributed consensus.  By accumulating entropy through high-dimensional foliations, it delivers negligible energy cost, strong quantum resistance, and compact light-client proofs—making it an attractive foundation for next-generation Layer-0 blockchains.
 
----
+
 
 ## References
 
