@@ -6,7 +6,7 @@ description:  Eni6ma Technology and the Rosario-Wang Proof/Cypher is Patent Pend
 ---
 
 
-# The Enigma Cipher: A Comprehensive Overview of Its Sequence and Structure
+## The Enigma Cipher: A Comprehensive Overview 
 
 ## Introduction
 
