@@ -26,14 +26,13 @@ nav-menu:
   permalink: blog
 
 # use false to turn off any social media links
-twitter: https://twitter.com/
-facebook: https://facebook.com/
-instagram: https://instagram.com/
+twitter: https://x.com/
+youtube: https://youtube.com/
 github: https://github.com/
 linkedin: https://linkedin.com/
 medium: false
 google-scholar: false
-email: false
+email: mailto:contact@eni6ma.co
 
 # footer information
 footer-msg: "Powered by Eni6ma"
