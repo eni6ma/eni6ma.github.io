@@ -72,6 +72,10 @@ description: Discover ENI6MA, the cognitive cybersecurity platform redefining au
   <a href="mailto:contact@eni6ma.co" class="bg-white text-black px-8 py-3 rounded-full font-semibold">For a Demo, Contact Out Team Today</a>
 </section>
 
+
+{% include social-media.html %}
+
+
 <!-- Footer -->
 <footer class="bg-gray-800 text-black text-center py-8">
   <p>Made with 💙 in San Francisco · © ENI6MA </p>
