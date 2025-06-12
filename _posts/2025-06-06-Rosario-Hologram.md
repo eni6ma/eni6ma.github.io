@@ -161,14 +161,6 @@ The system’s **holographic morphism** acts like a private, non-invertible lens
 
 ---
 
-### How ENI6MA  applies these patterns
-
-* **Entropy validation & witness reconstruction** can be modelled as a PRF/PRP: the user’s secret mnemonic → ( private key) *K*, and the verifier runs F\_K on the challenge to check consistency.
-* **Statelessness** is achieved by making $F\_K$ a pure function (there is no stored credential beyond K in the user’s head).
-* **Quantum-resistance** comes from choosing the underlying trapdoor or PRF primitive (e.g., lattice-based or ring-learning-with-errors) so that both the forward map and its inverse remain hard even for quantum attackers.
-* **Delegated verification** (server sees evidence but never the secret) naturally matches the OPRF pattern, ensuring the service cannot impersonate the user elsewhere.
-
-By chaining these historically proven “private map’’ patterns—trapdoor functions for initial commitment, PRFs/PRPs for fast validation, and OPRF-style blinding for zero-knowledge leakage—ENI6MA can enforce that only the rightful cognitive keyholder can traverse the mapping in either direction, keeping both the map and the entropy it binds completely confidential.
 
 [1]: https://en.wikipedia.org/wiki/Trapdoor_function?utm_source=chatgpt.com "Trapdoor function - Wikipedia"
 [2]: https://en.wikipedia.org/wiki/RSA_cryptosystem?utm_source=chatgpt.com "RSA cryptosystem"
