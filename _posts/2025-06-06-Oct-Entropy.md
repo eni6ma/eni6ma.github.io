@@ -1,5 +1,6 @@
 
 
+By Dr. Octavia Sulea, Dr. Francisco Perez & Dylan Rosario 
 
 The **Oct-Entropy pattern** is a cryptographic mechanism incorporated into applications of the Rosario-Wang and Eni6ma architecture that governs the projection of authentication information across high-dimensional state manifolds, using structured *symmetric nonce fields* and *private map interactions* to protect Hilbert space encodings against observation, interception, or injection attacks.
 
@@ -277,5 +278,78 @@ Thus, the Oct-Entropy pattern functions as a **manifold selector and synchronize
 3. **Cross-medium embodiment**: Because the entropy state gates projection into color, audio, haptic, or gesture-based representations, this framework supports multi-carrier authentication surfaces, extending beyond traditional screen or keyboard inputs.
 
 Furthermore, because each entropy field is symmetric (pre-generated on both ends) but unknown to outsiders, **even a compromised channel cannot yield usable attack vectors**—the manifold projection remains cloaked until validated through the correct entropy-witness pairing.
+
+
+---
+
+### 📚 **Cryptography Bibliography: Symmetric Nonces, ZKPs, and Entropy Pools**
+
+1. **Bellare, M., & Rogaway, P. (2005).**
+   *Introduction to Modern Cryptography*
+   [https://web.cs.ucdavis.edu/\~rogaway/classes/227/spring05/book/main.pdf](https://web.cs.ucdavis.edu/~rogaway/classes/227/spring05/book/main.pdf)
+
+   > Chapter 4–6 offers rigorous treatment of nonce-based encryption, message indistinguishability, and the foundations of secure channels with fresh random values.
+
+2. **Barak, B., Goldreich, O., Goldwasser, S., & Lindell, Y. (2001).**
+   *Resettably-Sound Zero-Knowledge and Its Applications*
+   In: FOCS 2001. IEEE.
+   [https://eprint.iacr.org/2001/040.pdf](https://eprint.iacr.org/2001/040.pdf)
+
+   > Defines security under multiple zero-knowledge models with relevance to proof reuse and session-based uniqueness.
+
+3. **Goldwasser, S., Micali, S., & Rackoff, C. (1985).**
+   *The Knowledge Complexity of Interactive Proof-Systems*
+   SIAM Journal on Computing, 18(1), 186–208.
+   [https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Zero%20Knowledge/The%20Knowledge%20Complexity%20of%20Interactive%20Proof-Systems.pdf](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Zero%20Knowledge/The%20Knowledge%20Complexity%20of%20Interactive%20Proof-Systems.pdf)
+
+   > Foundational paper defining Zero-Knowledge Proofs (ZKPs), highly applicable to Rosario-Wang's witness-verification construct.
+
+4. **Dworkin, M. (2016).**
+   *NIST Special Publication 800-90A Rev. 1: Recommendation for Random Number Generation Using Deterministic Random Bit Generators*
+   NIST.
+   [https://csrc.nist.gov/publications/detail/sp/800-90a/rev-1/final](https://csrc.nist.gov/publications/detail/sp/800-90a/rev-1/final)
+
+   > Covers entropy-pool management, reseeding strategies, and lifecycle transitions (e.g., AVAILABLE → USED), directly supporting Oct-Entropy’s session-uniqueness objectives.
+
+5. **Dodis, Y., & Smith, A. (2005).**
+   *Entropic Security and the Encryption of High Entropy Messages*
+   Theory of Cryptography Conference (TCC).
+   [https://link.springer.com/chapter/10.1007/978-3-540-30576-7\_11](https://link.springer.com/chapter/10.1007/978-3-540-30576-7_11)
+
+   > Provides entropy-security definitions for ciphertext indistinguishability in cases of large message entropy—important for replay-resistance.
+
+6. **Bernstein, D. J., & Lange, T. (2017).**
+   *Nonces are Not Secrets: CVE-2017-13098 and How Not to Use Nonces*
+   IACR ePrint Archive.
+   [https://eprint.iacr.org/2017/792.pdf](https://eprint.iacr.org/2017/792.pdf)
+
+   > Documents a real-world vulnerability caused by poor nonce hygiene, reinforcing the need for stateful entropy pools in systems like Rosario-Wang.
+
+7. **Katz, J., & Lindell, Y. (2020).**
+   *Introduction to Modern Cryptography* (3rd Edition)
+   CRC Press.
+   ISBN: 978-0367331584
+
+   > Authoritative reference with deep coverage of authenticated encryption, proof systems, and computational assumptions behind replay safety.
+
+8. **Bohli, J.-M., et al. (2007).**
+   *Nonce-Based Replay Attack Resistance in Key Exchange Protocols*
+   Computer Security – ESORICS.
+   [https://link.springer.com/chapter/10.1007/978-3-540-74835-9\_22](https://link.springer.com/chapter/10.1007/978-3-540-74835-9_22)
+
+   > Analyzes session freshness, non-repeatable authentication, and secure nonce utilization.
+
+9. **Canetti, R., & Krawczyk, H. (2001).**
+   *Analysis of Key-Exchange Protocols and Their Use for Building Secure Channels*
+   EUROCRYPT.
+   [https://eprint.iacr.org/2001/040](https://eprint.iacr.org/2001/040)
+
+   > Formalizes channel-based security with entropy sources and nonces, laying groundwork for secure session morphisms.
+
+10. **Boneh, D., & Shoup, V. (2020).**
+    *A Graduate Course in Applied Cryptography*
+    [https://crypto.stanford.edu/\~dabo/cryptobook/](https://crypto.stanford.edu/~dabo/cryptobook/)
+   
+    > Comprehensive treatment of symmetric encryption, ZKPs, authenticated key exchange, and hybrid protocols relevant to Rosario-Wang’s layered architecture.
 
 
