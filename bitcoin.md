@@ -1,12 +1,10 @@
 ---
 layout: page
-title: Cryptography 
+title: ENI6MA a Cryptographic Engine for Zero-Knowledge Proofs Across Modalities 
 permalink: cryptography
 description:  Eni6ma Technology and the Rosario-Wang Proof/Cypher is Patent Pending. USPTO 2024. Copyright 2024 All right reserved. Eni6ma.org - Dylan Rosario
 ---
 
-
-# ENI6MA — A End-to-End Cryptographic Engine for Zero-Knowledge Proofs Across Modalities
 
 **ENI6MA** is not just an authentication platform—it is a next-generation **proof infrastructure**. At its core lies a novel cryptographic primitive, the **Rosario–Wang Proof of Information Entanglement**, a high-dimensional, zero-knowledge protocol that transforms human-memorable inputs into reusable, carrier-agnostic cryptographic proofs.
 
