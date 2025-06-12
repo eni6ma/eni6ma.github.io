@@ -218,35 +218,6 @@ The Oct-Entropy Pattern and subsequent algorithms derived from it transform nonc
 ## Protocol Outline
 
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant ClientApp
-    participant AuthService
-    participant EntropyDB
-    participant VerificationCircuit
-
-    User->>ClientApp: Initiate Auth Request
-    ClientApp->>AuthService: POST /api/entropy/request (userId, action)
-    AuthService->>EntropyDB: Expire old reservations for user
-    AuthService->>EntropyDB: Select next AVAILABLE entropy
-    AuthService->>EntropyDB: Mark entropy as RESERVED, log reservation
-    EntropyDB-->>AuthService: Reservation confirmed
-    AuthService-->>ClientApp: entropy, reservationToken, expiresAt
-    ClientApp-->>User: Display challenge (witness input)
-    User->>ClientApp: Enter witness sequence
-    ClientApp->>AuthService: POST /api/entropy/use (userId, entropy, witnessSequence, token)
-    AuthService->>EntropyDB: Validate reservation (token, user, state, expiry)
-    AuthService->>VerificationCircuit: Pass entropy, witnessSequence
-    VerificationCircuit->>EntropyDB: Check entropy not used (usage log)
-    VerificationCircuit-->>AuthService: Proof result (valid/invalid)
-    alt Proof valid
-        AuthService->>EntropyDB: Mark entropy as USED, log usage
-        AuthService-->>ClientApp: Success response
-    else Proof invalid or entropy reused
-        AuthService-->>ClientApp: Error (invalid or replayed entropy)
-    end
-```
 
 **Description:**
 - The user initiates authentication, and the client requests an entropy value from the service.
