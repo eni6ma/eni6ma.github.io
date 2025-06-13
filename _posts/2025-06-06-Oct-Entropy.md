@@ -6,7 +6,7 @@ The **Oct-Entropy pattern** is a cryptographic mechanism incorporated into appli
 
 At its core, the Oct-Entropy pattern organizes **orthogonal entropy states**—each a pre-generated, symmetric, and stochastic nonce—into a *projection-ready ensemble*. These entropy values are not merely random identifiers; they act as carriers of manifold coordinates that define the shape, timing, and alignment of the **morphic embedding** across both cognitive and sensory alphabets. Each entropy unit is tracked with a well-defined lifecycle: `AVAILABLE → RESERVED → USED`, allowing for secure synchronization across endpoints without reuse or leakage. This enables **non-repeatable authentication requests**, a prerequisite for both zero-knowledge integrity and replay-attack immunity.
 
-The **holographic morphism** ${H} \colon{L}_i \rightarrow{L}_j$, a defining feature of Rosario-Wang, relies on these Oct-Entropy values to define and project entangled mappings across multiple modality dimension ( e.g., $(A)$ → $(B)$ → $(C)$ ). These projections are instantiated on a Hilbert space manifold ${H}$, but **protected via foliation gates** derived from the private entropy states. In effect, the entropy serves as both *a projection seed* and *an access gate*—each nonce activates a particular leaf of the manifold, and only those with access to the private map ${M}(P)$ can reconstruct or traverse the correct leaf.
+The **holographic morphism** ${H} \colon{L}_i \rightarrow{L}_j$, a defining feature of Rosario-Wang, relies on these Oct-Entropy values to define and project entangled mappings across multiple modality dimension ( e.g. $(A)$ → $(B)$ → $(C)$ ). These projections are instantiated on a Hilbert space manifold ${H}$, but **protected via foliation gates** derived from the private entropy states. In effect, the entropy serves as both *a projection seed* and *an access gate*—each nonce activates a particular leaf of the manifold, and only those with access to the private map ${M}(P)$ can reconstruct or traverse the correct leaf.
 
 Thus, the Oct-Entropy pattern functions as a **manifold selector and synchronizer**, enabling:
 
@@ -40,7 +40,7 @@ The Oct-Entropy procedure can thus be viewed as a coordinated entropy-oracle tha
 
 ### 1. **Oct-Entropy State Space**
 
-Let ${E} = { e_1, e_2, \dots, e_8 }$ be a finite set of eight orthogonal entropy elements, each $e_i \in \{0,1\}^k$, where $k$ is the entropy bit-length (e.g., 256 bits for quantum resistance).
+Let ${E} = { e_1, e_2, \dots, e_n }$ be a finite set of n orthogonal entropy elements, each $e_i \in \{0,1\}^k$, where $k$ is the entropy bit-length (e.g. 256 bits for quantum resistance).
 
 Each entropy value $e_i$ has a dynamic lifecycle state:
 
@@ -280,7 +280,7 @@ Furthermore, because each entropy field is symmetric (pre-generated on both ends
 
 # Findings
 
-In the context of the Rosario-Wang protocol, the Oct-Entropy pattern defines a fixed pool of eight orthogonal entropy elements $E = \{ e_1, ..., e_8 \}$, each a 256-bit symmetric nonce pre-agreed upon by both prover and verifier. Unlike traditional nonce usage—which assumes ephemeral randomness—the Oct-Entropy model formalizes each entropy unit as a **stateful object**, with lifecycles that transition from `AVAILABLE` → `RESERVED` → `USED`. This structure enables atomicity, deferred proof activation, and non-replayability across sessions.
+In the context of the Rosario-Wang protocol, the Oct-Entropy pattern defines a fixed pool of orthogonal entropy elements $E = \{ e_1, ..., e_8 \}$, each a 256-bit symmetric nonce pre-agreed upon by both prover and verifier. Unlike traditional nonce usage—which assumes ephemeral randomness—the Oct-Entropy model formalizes each entropy unit as a **stateful object**, with lifecycles that transition from `AVAILABLE` → `RESERVED` → `USED`. This structure enables atomicity, deferred proof activation, and non-replayability across sessions.
 
 ## 🧠 Secure Nonce Attestation and Cryptographic Secrecy in Oct-Entropy Manifolds
 
@@ -303,7 +303,7 @@ The implications of this framework extend into several cryptographic domains:
 
 * In ZKP protocols, it acts as a carrier for entropy-synchronized witnesses.
 * In challenge-response systems, it eliminates the need for persistent keys or external oracles.
-* In hardware authentication (e.g., smartcards, secure enclaves), it enables **burn-after-use** projection gates without storing secret state.
+* In hardware authentication (e.g. smartcards, secure enclaves), it enables **burn-after-use** projection gates without storing secret state.
 
 The Oct-Entropy framework provides a mathematically rigorous, lifecycle-governed, cryptographically private structure for symmetric nonce attestation. It transforms the nonce from a disposable artifact into a **verifiable morphism selector**, enabling manifold-resilient zero-knowledge proofs and practical defense against both **replay and morphism-inversion attacks** in modern adversarial environments.
 
@@ -327,7 +327,7 @@ The Oct-Entropy framework provides a mathematically rigorous, lifecycle-governed
 3. **Goldwasser, S., Micali, S., & Rackoff, C. (1985).**
    *The Knowledge Complexity of Interactive Proof-Systems*
    SIAM Journal on Computing, 18(1), 186–208.
-   [https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Zero%20Knowledge/The%20Knowledge%20Complexity%20of%20Interactive%20Proof-Systems.pdf](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Zero%20Knowledge/The%20Knowledge%20Complexity%20of%20Interactive%20Proof-Systems.pdf)
+   [https://dl.acm.org/doi/abs/10.1145/3335741.3335750](https://dl.acm.org/doi/abs/10.1145/3335741.3335750)
 
    > Foundational paper defining Zero-Knowledge Proofs (ZKPs), highly applicable to Rosario-Wang's witness-verification construct.
 
