@@ -117,9 +117,6 @@ Even if $T_{\text{obs}}$ is correct, the consumed entropy invalidates future use
 #### 4.2. **One-Time Morphism Guarantee**
 
 
-Here is the same expression rewritten in Markdown without using ``, using simpler LaTeX notation compatible with standard academic Markdown rendering:
-
-
 The composite morphism $H_{e^R} = \Pi_{e^R} \circ M$ is injective with respect to the session-specific entropy, 
 ensuring that the same witness sequence $P$ maps to distinct projections across different rounds. Formally,
 
