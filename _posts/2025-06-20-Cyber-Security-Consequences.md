@@ -226,7 +226,7 @@ For budgeting and risk-transfer purposes, a U.S. financial-services firm should 
 
 * **Escalators.** Larger customer counts, children’s data, or evidence of concealment can push individual line-items to statutory maxima (e.g., FTC can seek US \\$  50 000 per COPPA-affected child; HIPAA tops at US \\$  2 M per category per year).
 
-For enterprise risk planning, a mainstream U.S. company that is not a bank or broker-dealer should budget ** ≈ US \\$ 15-25 million in regulatory exposure per significant breach**, assuming “average” enforcement rather than record-setting cases.
+For enterprise risk planning, a mainstream U.S. company that is not a bank or broker-dealer should budget **≈ US \\$ 15-25 million in regulatory exposure per significant breach**, assuming “average” enforcement rather than record-setting cases.
 
 ---
 
