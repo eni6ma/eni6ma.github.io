@@ -175,7 +175,7 @@ Beyond the dollar figures lie non-monetary sanctions that frequently outlast the
 
 ### ***“Average” = midpoint of published consent-order amounts for cyber-security/control failures since 2022; figures exclude outlier mega-settlements and private class-action payouts.**
 
-### 
+
 
 | Scenario | OCC / FTC | SEC | NYDFS | PCI | CCPA | Blended Total |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -184,11 +184,11 @@ Beyond the dollar figures lie non-monetary sanctions that frequently outlast the
 
 ### **What the “single-incident” total really means**
 
-* ###  Single investigation, multiple dockets: Regulators usually coordinate, so each agency issues one penalty order covering every control breakdown revealed by the incident. 
+*  **Single investigation**, multiple dockets: Regulators usually coordinate, so each agency issues one penalty order covering every control breakdown revealed by the incident. 
 
-* ### Civil only: Criminal exposure (e.g., willful SEC misstatements) and private class actions (CCPA statutory damages, securities litigation) sit on top of the figures above.
+*  **Civil only**: Criminal exposure (e.g., willful SEC misstatements) and private class actions (CCPA statutory damages, securities litigation) sit on top of the figures above.
 
-* ### Escalators: Repeat offences, willful misconduct, consumer-impact scale, and refusal to remediate quickly can lift the OCC/SEC/NYDFS numbers well beyond the mid-range shown.
+*  **Escalators**: Repeat offences, willful misconduct, consumer-impact scale, and refusal to remediate quickly can lift the OCC/SEC/NYDFS numbers well beyond the mid-range shown.
 
 ### For budgeting and risk-transfer purposes, a U.S. financial-services firm should therefore assume baseline regulatory fines ± US \\$ 10 million in the non-bank case and ± US \\$ 25 million in the bank case, before counting litigation, customer restitution, and incident-response costs.
 
@@ -228,9 +228,7 @@ Beyond the dollar figures lie non-monetary sanctions that frequently outlast the
 
 For enterprise risk planning, a mainstream U.S. company that is not a bank or broker-dealer should budget ≈ US \\$ 15-25 million in regulatory exposure per significant breach, assuming “average” enforcement rather than record-setting cases.
 
-## ---
-
-## 
+---
 
 ##  BREAKDOWN
 
