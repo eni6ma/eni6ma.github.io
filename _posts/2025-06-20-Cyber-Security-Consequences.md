@@ -190,7 +190,7 @@ Beyond the dollar figures lie non-monetary sanctions that frequently outlast the
 
 *  **Escalators**: Repeat offences, willful misconduct, consumer-impact scale, and refusal to remediate quickly can lift the OCC/SEC/NYDFS numbers well beyond the mid-range shown.
 
-### For budgeting and risk-transfer purposes, a U.S. financial-services firm should therefore assume baseline regulatory fines ± US \\$ 10 million in the non-bank case and ± US \\$ 25 million in the bank case, before counting litigation, customer restitution, and incident-response costs.
+For budgeting and risk-transfer purposes, a U.S. financial-services firm should therefore assume **baseline regulatory fines ± US \\$ 10 million in the non-bank case and ± US \\$ 25 million** in the bank case, before counting litigation, customer restitution, and incident-response costs.
 
 ---
 
@@ -226,7 +226,7 @@ Beyond the dollar figures lie non-monetary sanctions that frequently outlast the
 
 * **Escalators.** Larger customer counts, children’s data, or evidence of concealment can push individual line-items to statutory maxima (e.g., FTC can seek US \\$  50 000 per COPPA-affected child; HIPAA tops at US \\$  2 M per category per year).
 
-For enterprise risk planning, a mainstream U.S. company that is not a bank or broker-dealer should budget ≈ US \\$ 15-25 million in regulatory exposure per significant breach, assuming “average” enforcement rather than record-setting cases.
+For enterprise risk planning, a mainstream U.S. company that is not a bank or broker-dealer should budget ** ≈ US \\$ 15-25 million in regulatory exposure per significant breach**, assuming “average” enforcement rather than record-setting cases.
 
 ---
 
