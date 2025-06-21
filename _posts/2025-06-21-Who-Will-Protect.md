@@ -28,7 +28,6 @@ Because as the Google Aurora Attack proved, not even the most powerful tech firm
 
 True security won’t come from above. It must be **built from the ground up**, in architecture, in policy, and in the mind of the individual who understands that sovereignty is not given. It is taken, maintained, and defended, **especially in a world where no one else will**.
 
-refined for publication or adapted to a talk, op-ed, or whitepaper.
 
 ---
 
