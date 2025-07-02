@@ -94,38 +94,6 @@ The system requires **no vault**, no shared secrets, and no device registration.
 
 ---
 
-## 📏 Formal Compliance
-
-ENI6MA aligns with:
-
-* **NIST SP 800-63-C (AAL3)** – provides hardware-free, phishing-resistant assurance
-* **ISO/IEC 19790** – cryptographic module verification in HSMs, e-passport chips
-* **IEC 62443** – industrial control and critical infrastructure authentication
-
-Machine-checkable axioms enable formal proofs in Coq/Isabelle, suitable for regulatory approval or post-quantum standards.
-
----
-
-## 💼 Business Model
-
-ENI6MA operates as a **licensable cryptographic IP company**, akin to ARM or Dolby:
-
-* **SDK Access**: WASM verifier + RPC endpoints for IAM/SaaS (\$/user/month)
-* **OEM IP Block**: FPGA- and ASIC-level logic slices for embedded use
-* **Sovereign Suite**: Turnkey stack for national ID, DIDs, and compliance
-
-> ENI6MA’s total addressable market spans authentication, IoT, AI provenance, and decentralized identity—well beyond \$500B in aggregate.
-
----
-
-## 🧠 Closing Perspective
-
-Where classical cryptography hides secrets inside devices, **ENI6MA relocates trust into symbolic cognition**. Each proof is ephemeral, unforgeable, and bound to a session-specific, entropy-driven projection—**never stored, never repeated**.
-
-In a world of generative adversaries and broken credential chains, ENI6MA transforms authentication into a cognitive act, verifiable through structured projection—not static possession.
-
-> **ENI6MA doesn’t secure passwords. It proves knowledge without ever revealing it.**
-
 
 ## References
 
