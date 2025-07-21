@@ -1,0 +1,72 @@
+
+
+
+**Position**: Chief Executive Officer (CEO)
+**Company**: **ENI6MA Inc.** — Advanced Cryptography & Zero-Knowledge Solutions
+**Reports to**: Board of Directors
+**Location**: Hybrid / Bay Area preferred (international travel required)
+
+
+
+### Company Snapshot
+
+ENI6MA commercializes the Rosario-Wang proof-of-knowledge and associated zero-knowledge technologies for aerospace, defense, and Fortune 500 customers. The firm is venture-backed, cash-positive, and poised for its next phase of scale.
+
+
+
+### Role Summary
+
+The CEO will own full P\&L and strategic direction, spearhead late-stage fundraising, and guide ENI6MA through a planned liquidity event within 4-6 years. This leader will combine deep technical credibility with proven capital-markets acumen and a record of scaling production systems in mission-critical environments.
+
+
+
+### Key Responsibilities
+
+| Category                                   | Core Expectations                                                                                                                                                                                                                                          |
+|  | - |
+| **Strategic Leadership**                   | • Craft and continuously refine a 3- to 5-year corporate roadmap that aligns R\&D, go-to-market, and regulatory strategy.<br>• Champion a culture of ethical innovation and disciplined execution.                                                         |
+| **Capital Formation & Investor Relations** | • Raise Series C+ and strategic growth rounds; target >\$100 M in cumulative new capital.<br>• Cultivate relationships with tier-one VCs, sovereign funds, and strategic CVCs.<br>• Provide transparent, data-driven reporting to the Board and investors. |
+| **Liquidity Planning**                     | • Architect and negotiate a high-value sale, merger, or SPAC exit; structure terms to preserve IP integrity and stakeholder value.<br>• Lead pre-transaction readiness (diligence, compliance, integration planning).                                      |
+| **Operational Excellence**                 | • Scale manufacturing & cloud deployments of cryptography appliances to 10× volume while meeting FedRAMP High and DoD IL5 standards.<br>• Drive continuous improvement in secure software supply chains, NIST SP 800-171, and ISO 27001 controls.          |
+| **Government & Regulatory Affairs**        | • Manage classified-program interfaces (e.g., DISA, DARPA) and maintain facility & personnel clearances.<br>• Influence emerging standards for post-quantum and ZK proofs through participation in NIST, ETSI, and IEEE working groups.                    |
+| **Talent & Culture**                       | • Attract senior engineering, sales, and operations leaders; implement succession pipelines.<br>• Foster diversity, equity, and inclusion, ensuring psychological safety and high accountability.                                                          |
+
+
+
+### Required Qualifications
+
+* **Capital Strategy** – Minimum 10 years securing equity/debt financing; led ≥ \$200 M in aggregate raises.
+* **Exit Track Record** – C-suite (or GM/P\&L) during a successful tech company sale or acquisition valued at ≥ \$500 M.
+* **Fortune 500 Delivery** – 10 + years shipping production hardware/software platforms adopted enterprise-wide at a Fortune 500; demonstrable mastery of quality, scale, and lifecycle management.
+* **Government Engagement** – Managed multi-agency programs or held active contracts with DoD, IC, or allied ministries.
+* **Education** – Ph.D. (or equivalent research doctorate) in Computer Science, Electrical Engineering, Applied Mathematics, or related STEM field.
+* **Security Clearance** – Ability to obtain and maintain Top Secret / SCI.
+* **Leadership Skills** – Inspirational communicator, decisive operator, and mentor who navigates ambiguity with composure and integrity.
+
+
+
+### Preferred Attributes
+
+* Prior oversight of zero-knowledge, post-quantum, or advanced cryptographic products.
+* Experience scaling SaaS revenue past \$100 M ARR.
+* Board governance training (e.g., NACD, Harvard PON).
+* Multilingual; comfortable conducting business across North America, Europe, and Indo-Pacific regions.
+
+
+
+### Compensation & Benefits
+
+* Competitive base salary, performance bonus, and significant equity (\~5 % post-Series C).
+* Comprehensive medical, dental, vision, and 401(k) match.
+* Executive relocation and annual wellness stipend.
+* Eligibility for change-of-control and transaction success incentives.
+
+
+
+### Application Process
+
+Qualified candidates should email **[executive-search@eni6ma.com](mailto:executive-search@eni6ma.com)** with a résumé, one-page statement of vision for zero-knowledge adoption, and references. ENI6MA is an equal-opportunity employer committed to building a diverse leadership team.
+
+
+
+*Confidential — distribution restricted to retained search partners and referred candidates only.*
