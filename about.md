@@ -80,74 +80,7 @@ The experience is different too. Setup is a one-off: a user invents a short colo
 
 
   
-<!-- Formal Compliance Section -->
-<section class="bg-gray-50 py-20 px-8">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-4xl font-bold mb-8 text-center">📏 Formal Compliance</h2>
-    <p class="text-lg mb-6 text-center">ENI6MA aligns with:</p>
-    <div class="space-y-4 mb-8">
-      <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
-        <p class="font-semibold text-lg">NIST SP 800-63-C (AAL3)</p>
-        <p class="text-gray-700">Provides hardware-free, phishing-resistant assurance</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
-        <p class="font-semibold text-lg">ISO/IEC 19790</p>
-        <p class="text-gray-700">Cryptographic module verification in HSMs, e-passport chips</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
-        <p class="font-semibold text-lg">IEC 62443</p>
-        <p class="text-gray-700">Industrial control and critical infrastructure authentication</p>
-      </div>
-    </div>
-    <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-      <p class="text-center text-gray-800">Machine-checkable axioms enable formal proofs in Coq/Isabelle, suitable for regulatory approval or post-quantum standards.</p>
-    </div>
-  </div>
-</section>
 
-<!-- Business Model Section -->
-<section class="bg-white py-20 px-8">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-4xl font-bold mb-8 text-center">💼 Business Model</h2>
-    <p class="text-lg mb-6 text-center">ENI6MA operates as a <strong>licensable cryptographic IP company</strong>, akin to ARM or Dolby:</p>
-    <div class="grid md:grid-cols-3 gap-6 mb-8">
-      <div class="bg-gray-50 p-6 rounded-lg text-center">
-        <h3 class="font-bold text-xl mb-3">SDK Access</h3>
-        <p class="text-gray-700">WASM verifier + RPC endpoints for IAM/SaaS</p>
-        <p class="text-sm text-gray-500 mt-2">$/user/month</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-lg text-center">
-        <h3 class="font-bold text-xl mb-3">OEM IP Block</h3>
-        <p class="text-gray-700">FPGA- and ASIC-level logic slices for embedded use</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-lg text-center">
-        <h3 class="font-bold text-xl mb-3">Sovereign Suite</h3>
-        <p class="text-gray-700">Turnkey stack for national ID, DIDs, and compliance</p>
-      </div>
-    </div>
-    <div class="bg-green-50 p-6 rounded-lg border border-green-200">
-      <blockquote class="text-center text-gray-800 italic">
-        ENI6MA's total addressable market spans authentication, IoT, AI provenance, and decentralized identity—well beyond $500B in aggregate.
-      </blockquote>
-    </div>
-  </div>
-</section>
-
-<!-- Closing Perspective Section -->
-<section class="bg-black text-white py-20 px-8">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-8">🧠 Closing Perspective</h2>
-    <div class="space-y-6 text-lg">
-      <p>Where classical cryptography hides secrets inside devices, <strong>ENI6MA relocates trust into symbolic cognition</strong>. Each proof is ephemeral, unforgeable, and bound to a session-specific, entropy-driven projection—<strong>never stored, never repeated</strong>.</p>
-      <p>In a world of generative adversaries and broken credential chains, ENI6MA transforms authentication into a cognitive act, verifiable through structured projection—not static possession.</p>
-    </div>
-    <div class="mt-12 p-8 bg-white text-black rounded-lg">
-      <blockquote class="text-2xl font-bold">
-        ENI6MA doesn't secure passwords. It proves knowledge without ever revealing it.
-      </blockquote>
-    </div>
-  </div>
-</section>
 
 
 {% include social-media.html %}
