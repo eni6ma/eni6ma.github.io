@@ -14,10 +14,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>{{ site.title }}</title>
+  <link rel="icon" href="{{ '/assets/img/279.png' | relative_url }}">
 
   <!-- TailwindCSS and Inter Font-->
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css">
+  <!-- Always load compiled Tailwind CSS (dev and prod) -->
+  <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | relative_url }}">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
   <!-- fontawesome -->
@@ -42,10 +43,10 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
  </head>
 
-<body class="font-sans mx-auto max-w-prose">
-  <div class="pt-12 pb-4">
+<body class="font-sans bg-white text-gray-900 antialiased">
+  <main class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 pb-12">
     {{ content }}
-  </div>
+  </main>
 </body>
 
 <script>

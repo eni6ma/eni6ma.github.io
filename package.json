@@ -5,12 +5,21 @@
   "repository": "https://github.com/harrywang/tailpages.git",
   "author": "Harry Wang <harryjwang@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "css:build": "postcss assets/css/main.css -o assets/css/tailwind.css",
+    "css:watch": "postcss assets/css/main.css -o assets/css/tailwind.css --watch",
+    "serve": "JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config.local.yml",
+    "serve:lr": "JEKYLL_ENV=development bundle exec jekyll serve --livereload --livereload-port 35731 --config _config.yml,_config.local.yml",
+    "dev": "npm-run-all --parallel css:watch serve",
+    "build": "npm run css:build && JEKYLL_ENV=production bundle exec jekyll build"
+  },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
-    "tailwindcss": "^3.0.12"
+    "tailwindcss": "^3.0.12",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.1"

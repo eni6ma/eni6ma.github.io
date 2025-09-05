@@ -14,19 +14,19 @@
         </div>
 
         <div class="flex hidden md:block" id="navbar">
-            <div class="flex flex-col md:flex-row mr-auto w-full">
-                {% if page.url != "/" %} <!-- don't show Home in menu for Homepage -->
+            <div class="flex flex-col md:flex-row items-center justify-center w-full gap-2">
+                {% if page.url != "/" %}
                 <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 mx-auto uppercase"
-                    href="{{site.baseurl}}/">
+                    href="{{ '/' | relative_url }}">
                     Home
                 </a>
                 {% endif %}
 
                 <!-- dynamic menu based on navigation info in _config.yml -->
                 {% for link in site.nav-menu %}
-                    {% if page.permalink != {{link.permalink}} %} <!-- don't show current page in menu -->
+                    {% if page.permalink != link.permalink %}
                     <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 mx-auto uppercase"
-                        href="{{site.baseurl}}/{{link.permalink}}">
+                        href="{{ ('/' | append: link.permalink) | relative_url }}">
                         {{link.text}}
                     </a>
                     {% endif %}
