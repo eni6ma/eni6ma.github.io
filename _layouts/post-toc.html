@@ -11,14 +11,14 @@ layout: default
     {% if page.tags.size !=0 %}
       <i class="text-xs fas fa-tags"></i>
     {% for tag in page.tags %}
-      <div class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
+      <div class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-900 text-indigo-200 dark:bg-indigo-800 dark:text-indigo-100">
         <a class="!no-underline" href="{{site.baseurl}}/tag#{{ tag }}">{{ tag }}</a>
       </div>
     {% endfor %}
     {% endif %}
   </div>
 <div class="flex justify-center">
-  <button onclick="toggleTOC()" class="mt-6 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white p-4 py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  <button onclick="toggleTOC()" class="mt-6 bg-transparent hover:bg-blue-600 text-blue-400 font-semibold hover:text-white p-4 py-2 px-4 border border-blue-400 hover:border-transparent rounded dark:text-blue-300 dark:border-blue-300 dark:hover:bg-blue-700">
     Table of Contents
   </button>
 </div>

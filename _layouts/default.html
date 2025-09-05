@@ -3,19 +3,8 @@
 
 <head>
   <script>
-    (function () {
-      try {
-        var savedTheme = localStorage.getItem('theme');
-        var useDark = savedTheme ? savedTheme === 'dark' : true;
-        if (useDark) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-        }
-      } catch (e) {
-        document.documentElement.classList.add('dark');
-      }
-    })();
+    // Always use dark mode
+    document.documentElement.classList.add('dark');
   </script>
 
   <!-- google analytics -->
@@ -56,10 +45,56 @@
   </script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    #background-media-root {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+      background-color: #000000;
+    }
+    #background-media-root .background-media { 
+      position: relative; 
+      width: 100%; 
+      height: 100%; 
+    }
+    #background-media-root .background-gif,
+    #background-media-root .background-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+    #background-media-root .background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+  </style>
  </head>
 
-<body class="font-sans bg-white text-gray-900 antialiased dark:bg-gray-900 dark:text-gray-100">
-  <main class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 pb-12">
+<body class="font-sans bg-black text-gray-100 antialiased dark:bg-black dark:text-gray-100">
+  <div id="background-media-root">
+    <div class="background-media">
+      <img src="{{ '/assets/back-gif.gif' | relative_url }}" alt="background gif" class="background-gif" draggable="false" style="opacity: 0;">
+      <video class="background-video" src="{{ '/assets/back-vid.mp4' | relative_url }}" autoplay loop muted playsinline preload="auto" style="opacity: 0.18; transition: opacity 1s;" onended="this.currentTime=0; this.play();"></video>
+      <div class="background-overlay"></div>
+    </div>
+  </div>
+  <main class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 pb-12 relative" style="z-index: 1;">
     {{ content }}
   </main>
 </body>
@@ -99,34 +134,25 @@
             toc.style.display = "block";
         }
     }
-  /* Theme toggling */
-  function setTheme(dark) {
-    var root = document.documentElement;
-    if (dark) {
-      root.classList.add('dark');
-      try { localStorage.setItem('theme', 'dark'); } catch (e) {}
-    } else {
-      root.classList.remove('dark');
-      try { localStorage.setItem('theme', 'light'); } catch (e) {}
-    }
-    var toggle = document.getElementById('theme-toggle');
-    if (toggle) {
-      toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-    }
-    var moon = document.getElementById('icon-moon');
-    var sun = document.getElementById('icon-sun');
-    if (moon && sun) {
-      moon.style.display = dark ? 'none' : 'inline-block';
-      sun.style.display = dark ? 'inline-block' : 'none';
-    }
-  }
-  function toggleTheme() {
-    var isDark = document.documentElement.classList.contains('dark');
-    setTheme(!isDark);
-  }
   document.addEventListener('DOMContentLoaded', function () {
-    var isDark = document.documentElement.classList.contains('dark');
-    setTheme(isDark);
+    // Ensure background video loops forever
+    var backgroundVideo = document.querySelector('.background-video');
+    if (backgroundVideo) {
+      backgroundVideo.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+      });
+      
+      // Ensure video is playing
+      backgroundVideo.addEventListener('pause', function() {
+        this.play();
+      });
+      
+      // Start playing if not already
+      if (backgroundVideo.paused) {
+        backgroundVideo.play();
+      }
+    }
   });
 </script>
 
