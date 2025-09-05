@@ -1,78 +1,45 @@
-<section>
-  <div class="flex flex-wrap text-center">
-    <div class="w-full pt-4">
-      <div>
-        {% if site.twitter %}
-        <a href="{{site.twitter}}" target="_blank">
-          <button
-            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-twitter"></i>
-          </button>
-        </a>
-        {% endif %}
+<section class="py-6 text-base-content">
+  <div class="flex flex-wrap justify-center gap-4">
+    {% if site.twitter %}
+    <a href="{{site.twitter}}" target="_blank" class="btn btn-circle btn-primary btn-outline">
+      <i class="fab fa-twitter"></i>
+    </a>
+    {% endif %}
 
-        {% if site.youtube %}
-        <a href="{{site.youtube}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-youtube"></i>
-          </button>
-        </a>
-        {% endif %}
+    {% if site.youtube %}
+    <a href="{{site.youtube}}" target="_blank" class="btn btn-circle btn-secondary btn-outline">
+      <i class="fab fa-youtube"></i>
+    </a>
+    {% endif %}
 
-        {% if site.github %}
-        <a href="{{site.github}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-github"></i>
-          </button>
-        </a>
-        {% endif %}
+    {% if site.github %}
+    <a href="{{site.github}}" target="_blank" class="btn btn-circle btn-accent btn-outline">
+      <i class="fab fa-github"></i>
+    </a>
+    {% endif %}
 
-        {% if site.linkedin %}
-        <a href="{{site.linkedin}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-linkedin"></i>
-          </button>
-        </a>
-        {% endif %}
+    {% if site.linkedin %}
+    <a href="{{site.linkedin}}" target="_blank" class="btn btn-circle btn-info btn-outline">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    {% endif %}
 
-        {% if site.medium %}
-        <a href="{{site.medium}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-medium"></i>
-          </button>
-        </a>
-        {% endif %}
+    {% if site.medium %}
+    <a href="{{site.medium}}" target="_blank" class="btn btn-circle btn-warning btn-outline">
+      <i class="fab fa-medium"></i>
+    </a>
+    {% endif %}
 
-        {% if site.google-scholar %}
-        <a href="{{site.google-scholar}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fas fa-graduation-cap"></i>
-          </button>
-        </a>
-        {% endif %}
+    {% if site.google-scholar %}
+    <a href="{{site.google-scholar}}" target="_blank" class="btn btn-circle btn-success btn-outline">
+      <i class="fas fa-graduation-cap"></i>
+    </a>
+    {% endif %}
 
-        {% if site.email %}
-        <a href="{{site.email}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fas fa-paper-plane"></i>
-          </button>
-        </a>
-        {% endif %}
-
-      </div>
-    </div>
+    {% if site.email %}
+    <a href="{{site.email}}" target="_blank" class="btn btn-circle btn-error btn-outline">
+      <i class="fas fa-paper-plane"></i>
+    </a>
+    {% endif %}
   </div>
 </section>

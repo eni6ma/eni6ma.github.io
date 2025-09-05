@@ -86,7 +86,7 @@
   </style>
  </head>
 
-<body class="font-sans bg-black text-gray-100 antialiased dark:bg-black dark:text-gray-100">
+<body class="font-sans bg-base-100 text-base-content antialiased" data-theme="black">
   <div id="background-media-root">
     <div class="background-media">
       <img src="{{ '/assets/back-gif.gif' | relative_url }}" alt="background gif" class="background-gif" draggable="false" style="opacity: 0;">
@@ -94,9 +94,11 @@
       <div class="background-overlay"></div>
     </div>
   </div>
-  <main class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 pb-12 relative" style="z-index: 1;">
-    {{ content }}
-  </main>
+  <div class="flex flex-col">
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-12 relative" style="z-index: 1;">
+      {{ content }}
+    </main>
+  </div>
 </body>
 
 <script>

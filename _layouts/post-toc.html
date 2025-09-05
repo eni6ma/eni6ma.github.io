@@ -5,27 +5,29 @@ layout: default
   {% include nav.html%}
 {% endif %}
 
-<div class="px-4 pt-4 prose prose-{{site.theme-color}} dark:prose-invert">
-  <h1 class="text-center mt-6 mb-6" id="title">{{ page.title }}</h1>
-  <div class="text-center">
-    {% if page.tags.size !=0 %}
-      <i class="text-xs fas fa-tags"></i>
-    {% for tag in page.tags %}
-      <div class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-900 text-indigo-200 dark:bg-indigo-800 dark:text-indigo-100">
-        <a class="!no-underline" href="{{site.baseurl}}/tag#{{ tag }}">{{ tag }}</a>
-      </div>
-    {% endfor %}
-    {% endif %}
+<div class="container mx-auto px-4 py-8">
+  <div class="prose prose-lg max-w-none prose-invert">
+    <h1 class="text-center mt-6 mb-6 text-base-content" id="title">{{ page.title }}</h1>
+    <div class="text-center mb-6">
+      {% if page.tags.size !=0 %}
+        <i class="text-xs fas fa-tags text-base-content"></i>
+      {% for tag in page.tags %}
+        <div class="badge badge-primary badge-outline mx-1">
+          <a class="!no-underline text-base-content" href="{{site.baseurl}}/tag#{{ tag }}">{{ tag }}</a>
+        </div>
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="flex justify-center mb-6">
+      <button onclick="toggleTOC()" class="btn btn-primary btn-outline">
+        Table of Contents
+      </button>
+    </div>
+    <div id="toc" style="display:none;" class="text-base-content">
+      {% include toc.html html=content h_max=2%}
+    </div>
+    {{content}}
   </div>
-<div class="flex justify-center">
-  <button onclick="toggleTOC()" class="mt-6 bg-transparent hover:bg-blue-600 text-blue-400 font-semibold hover:text-white p-4 py-2 px-4 border border-blue-400 hover:border-transparent rounded dark:text-blue-300 dark:border-blue-300 dark:hover:bg-blue-700">
-    Table of Contents
-  </button>
-</div>
-  <div id="toc" style="display:none;" >
-  {% include toc.html html=content h_max=2%}
-</div>
-  {{content}}
 </div>
 
 

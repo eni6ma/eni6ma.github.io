@@ -6,9 +6,12 @@ description:  Eni6ma Technology and the Rosario-Wang Proof/Cypher is Patent Pend
 ---
 
 
-**ENI6MA** is not just an authentication platform—it is a next-generation **proof infrastructure**. At its core lies a novel cryptographic primitive, the **Rosario–Wang Proof of Information Entanglement**, a high-dimensional, zero-knowledge protocol that transforms human-memorable inputs into reusable, carrier-agnostic cryptographic proofs.
+<div class="prose prose-lg max-w-none prose-invert">
+  <div class="alert alert-info mb-8">
+    <span><strong>ENI6MA</strong> is not just an authentication platform—it is a next-generation <strong>proof infrastructure</strong>. At its core lies a novel cryptographic primitive, the <strong>Rosario–Wang Proof of Information Entanglement</strong>, a high-dimensional, zero-knowledge protocol that transforms human-memorable inputs into reusable, carrier-agnostic cryptographic proofs.</span>
+  </div>
 
-This architecture enables secure identity, data integrity, and authorization—without storing secrets, revealing credentials, or requiring specialized hardware. ENI6MA functions as a **layer-zero trust substrate** for post-quantum ecosystems, redefining authentication as an *epistemic act*, not a secret exchange.
+  <p>This architecture enables secure identity, data integrity, and authorization—without storing secrets, revealing credentials, or requiring specialized hardware. ENI6MA functions as a <strong>layer-zero trust substrate</strong> for post-quantum ecosystems, redefining authentication as an <em>epistemic act</em>, not a secret exchange.</p>
 
 ---
 
@@ -165,8 +168,6 @@ $$
 
 [Bellare1999]<sup>8</sup> [Benaloh1993]<sup>9</sup> [Pointcheval1996]<sup>10</sup>
 
-
-
 ## 🔬 Cryptographic Foundations
 
 ENI6MA introduces a universal symbolic language:
@@ -253,5 +254,6 @@ The system requires **no vault**, no shared secrets, and no device registration.
 ## References
 
 1. FD. Rosario & L. Wang PhD, *Proof of Information Entanglement*, provisional patent USPTO 2025.
-2. S. Goldwasser, S. Micali & C. Rackoff, “The Knowledge Complexity of Interactive Proofs”, *SIAM J. Comput.* 18(1), 1989.
-3. E. Ben-Sasson *et al.*, “Post-Quantum Zero-Knowledge Proof Systems”, *J. Cryptology* 35(4), 2022.
+2. S. Goldwasser, S. Micali & C. Rackoff, "The Knowledge Complexity of Interactive Proofs", *SIAM J. Comput.* 18(1), 1989.
+3. E. Ben-Sasson *et al.*, "Post-Quantum Zero-Knowledge Proof Systems", *J. Cryptology* 35(4), 2022.
+</div>

@@ -26,11 +26,13 @@ nav-menu:
     permalink: blog
   - text: Features
     permalink: features
+  - text: Agentic AI
+    permalink: agentic
   - text: Security
     permalink: security
   - text: Integrations
     permalink: integrations
-  - text: Use Cases
+  - text: UseCases
     permalink: use-cases
   - text: Technology
     permalink: technology

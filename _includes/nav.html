@@ -1,37 +1,58 @@
-<nav class="flex flex-wrap items-center justify-center px-2 mb-6">
-    <div class="container px-4 mx-auto flex flex-wrap items-center justify-center">
-        <div class="w-full relative flex justify-center gap-3">
-            <button type="button" onclick="toggleNavbar('navbar')"
-                class="rounded-md inline-flex items-center justify-center text-gray-500 md:hidden"
-                aria-expanded="false">
-                <span class="sr-only">Open menu</span>
-                <!-- Heroicon name: outline/menu -->
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+<div class="navbar bg-base-100/20 backdrop-blur-sm mb-6 text-white min-h-16">
+    <div class="navbar-start">
+        <div class="dropdown md:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle text-white">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
-            </button>
-        </div>
-
-        <div class="flex hidden md:block" id="navbar">
-            <div class="flex flex-col md:flex-row items-center justify-center w-full gap-2">
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base-content hidden">
                 {% if page.url != "/" %}
-                <a class="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 lg:py-1 mx-auto uppercase"
-                    href="{{ '/' | relative_url }}">
-                    Home
-                </a>
+                <li><a href="{{ '/' | relative_url }}" class="text-sm uppercase text-base-content hover:text-primary">Home</a></li>
                 {% endif %}
-
-                <!-- dynamic menu based on navigation info in _config.yml -->
                 {% for link in site.nav-menu %}
                     {% if page.permalink != link.permalink %}
-                    <a class="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 lg:py-1 mx-auto uppercase"
-                        href="{{ ('/' | append: link.permalink) | relative_url }}">
-                        {{link.text}}
-                    </a>
+                    <li><a href="{{ ('/' | append: link.permalink) | relative_url }}" class="text-sm uppercase text-base-content hover:text-primary">{{link.text}}</a></li>
                     {% endif %}
                 {% endfor %}
-            </div>
+            </ul>
         </div>
     </div>
-</nav>
+    <div class="navbar-center hidden md:flex flex-1 justify-center">
+        <ul class="menu menu-horizontal px-1 flex items-center space-x-6">
+            {% if page.url != "/" %}
+            <li><a href="{{ '/' | relative_url }}" class="text-sm uppercase text-white hover:text-primary px-4 py-3 rounded-md hover:bg-white/10 transition-colors mx-1">Home</a></li>
+            {% endif %}
+            {% for link in site.nav-menu %}
+                {% if page.permalink != link.permalink %}
+                <li><a href="{{ ('/' | append: link.permalink) | relative_url }}" class="text-sm uppercase text-white hover:text-primary px-4 py-3 rounded-md hover:bg-white/10 transition-colors mx-1">{{link.text}}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="navbar-end">
+        <!-- Empty for now, can add logo or other elements -->
+    </div>
+</div>
+
+<script>
+// Ensure mobile dropdown works properly
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    
+    if (dropdown && dropdownContent) {
+        dropdown.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownContent.classList.toggle('hidden');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                dropdownContent.classList.add('hidden');
+            }
+        });
+    }
+});
+</script>

@@ -5,19 +5,27 @@ layout: default
   {% include nav.html%}
 {% endif %}
 
-<div class="px-4 pt-4 prose prose-{{site.theme-color}} dark:prose-invert">
-  <h1 class="text-center mt-6 mb-6">{{ page.title }}</h1>
-  <div class="text-center">
-    {% if page.tags.size !=0 %}
-      <i class="text-xs fas fa-tags"></i>
-    {% for tag in page.tags %}
-      <div class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-900 text-indigo-200 dark:bg-indigo-800 dark:text-indigo-100">
-        <a class="!no-underline" href="{{ '/tag#' | append: tag | relative_url }}">{{ tag }}</a>
-      </div>
-    {% endfor %}
-    {% endif %}
-  </div>
-  {{content}}
+<div class="hero py-12 sm:py-16 bg-base-100/20 backdrop-blur-sm">
+    <div class="hero-content text-center w-full">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">{{ page.title }}</h1>
+            {% if page.tags.size !=0 %}
+            <div class="flex flex-wrap justify-center gap-2 mb-4 sm:mb-6">
+                {% for tag in page.tags %}
+                <div class="badge badge-primary badge-outline">
+                    <a class="!no-underline text-white" href="{{ '/tag#' | append: tag | relative_url }}">{{ tag }}</a>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto px-4 py-8">
+    <div class="prose prose-lg max-w-none prose-invert">
+        {{content}}
+    </div>
 </div>
 
 {% include footer.html %}
