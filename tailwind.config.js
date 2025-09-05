@@ -8,7 +8,7 @@ module.exports = {
     './_posts/**/*.{html,md,markdown}',
     '!./node_modules/**'
   ],
-  darkMode: 'media',
+  darkMode: 'class',
   theme: {
     extend: {
       typography: {

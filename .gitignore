@@ -141,3 +141,25 @@ Gemfile.lock
 vendor/bundle/*
 yarn.lock
 package-lock.json
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Jekyll build artifacts
+.jekyll-metadata
+.sass-cache/
+.bundle/
+vendor/
+web/AGENT.USER.README.md
+web/Agentic.Platform.md
+web/AGENTIC.SCENARIOS.md
+web/eni_6_ma_multi_page_react_tailwind_router_pages.jsx
+web/HOLOGRAPHIC.001.md
+web/MARKETING.001.md
+web/NLU.001.md
+web/README.md
+web/THE NEW ERA OF AI SECURITY AND AUTOMATION.md
+web/USER.EXPLAINER.md

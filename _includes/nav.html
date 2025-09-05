@@ -1,6 +1,6 @@
 <nav class="flex flex-wrap items-center justify-center px-2 mb-6">
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-center">
-        <div class="w-full relative flex justify-center">
+        <div class="w-full relative flex justify-center gap-3">
             <button type="button" onclick="toggleNavbar('navbar')"
                 class="rounded-md inline-flex items-center justify-center text-gray-500 md:hidden"
                 aria-expanded="false">
@@ -11,12 +11,21 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
+            <button id="theme-toggle" type="button" onclick="toggleTheme()" aria-pressed="true" title="Toggle dark mode"
+                class="rounded-md inline-flex items-center justify-center text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+                <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+                </svg>
+                <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                    <path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.8 1.42-1.42zM1 13h3v-2H1v2zm10 10h2v-3h-2v3zm9-10v-2h-3v2h3zm-3.64 7.36l1.41-1.41-1.79-1.8-1.41 1.42 1.79 1.79zM13 1h-2v3h2V1zm4.24 3.64l1.79-1.79-1.41-1.41-1.8 1.79 1.42 1.41zM4.22 18.36l1.79-1.79-1.41-1.41-1.8 1.79 1.42 1.41z"/>
+                </svg>
+            </button>
         </div>
 
         <div class="flex hidden md:block" id="navbar">
             <div class="flex flex-col md:flex-row items-center justify-center w-full gap-2">
                 {% if page.url != "/" %}
-                <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 mx-auto uppercase"
+                <a class="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 lg:py-1 mx-auto uppercase"
                     href="{{ '/' | relative_url }}">
                     Home
                 </a>
@@ -25,7 +34,7 @@
                 <!-- dynamic menu based on navigation info in _config.yml -->
                 {% for link in site.nav-menu %}
                     {% if page.permalink != link.permalink %}
-                    <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 mx-auto uppercase"
+                    <a class="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 lg:py-1 mx-auto uppercase"
                         href="{{ ('/' | append: link.permalink) | relative_url }}">
                         {{link.text}}
                     </a>
